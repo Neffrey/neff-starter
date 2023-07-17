@@ -4,9 +4,9 @@ import Link from "next/link";
 
 // COMPONENTS
 import { Button } from "~/components/ui/button";
-import ChevronDown from "~/components/svgs/chevronDown";
+import ChevronDown from "~/components/svgs/ChevronDown";
 
-export default function Home() {
+const Home = () => {
   return (
     <main className="flex flex-col w-full min-h-screen">
       <div
@@ -73,4 +73,6 @@ export default function Home() {
       </div>
     </main>
   );
-}
+};
+
+export default Home;
