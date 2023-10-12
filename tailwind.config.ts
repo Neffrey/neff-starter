@@ -2,11 +2,13 @@
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{ts,tsx}',
-    './components/**/*.{ts,tsx}',
-    './app/**/*.{ts,tsx}',
-    './src/**/*.{ts,tsx}',
-	],
+    // "./pages/**/*.{ts,tsx}",
+    // "./components/**/*.{ts,tsx}",
+    // "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     container: {
       center: true,
@@ -17,8 +19,7 @@ module.exports = {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
+        border: "hsl(var(--muted))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
@@ -50,6 +51,14 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        neutral: {
+          DEFAULT: "hsl(var(--neutral))",
+          foreground: "hsl(var(--neutral-foreground))",
+        },
+        input: {
+          DEFAULT: "hsl(var(--input))",
+          foreground: "hsl(var(--input-foreground))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -73,4 +82,4 @@ module.exports = {
     },
   },
   plugins: [require("tailwindcss-animate")],
-}
+};
